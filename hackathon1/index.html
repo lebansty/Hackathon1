@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE&FIRE</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        body{
+            margin-top: 0 ;
+            margin-left: 0;
+            margin-right: 0;
+            min-height: 100vh;
+            background: linear-gradient(to right top, #40D3CE, #6cdbeb);
+            font-family:'Times New Roman', Times, serif;
+          
+            
+        }
+        #navBar{
+            background-color: #3cb6b7;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            font-weight: 900;
+            font-size: 35px;
+            text-shadow: 2px 2px black;
+            color: #A5ECE5;
+           box-shadow: 0px 2px 5px #1A615F ;  
+         
+          
+        }
+        .card{
+            height: 100% !important;
+
+            font-family: inherit;
+
+        }
+
+        #btnMod{
+            background-color: darkcyan;
+            color: #BFF1EC;
+            box-shadow: 1px 1px black;
+        }
+.modal-content{
+    background-color: #8AFFFF;
+}
+
+        #cardMod{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            font-family: inherit;
+         background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.1));
+         
+        }
+        #modalShow{
+            font-family: inherit;
+        }
+        .btnclr{
+            background-color: darkcyan;
+            color: azure;
+            box-shadow: 1px 1px black;
+        }
+       .logo{
+        border-radius: 50%;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+<nav id="navBar" ><img src="ice&fire.jpg" class="logo "alt="" width="70" height="70"  class="d-inline-block align-text-top">
+BOOKS OF ICE & FIRE
+</nav>
+<div class="container d-flex">
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 gy-2 mt-3" id="dynaCard">
+
+    </div>
+
+</div>
+<div id="modalVisi">
+    <div class="modal" id="modalShow" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHead" ></h5>
+                
+           </div>
+              <div class="modal-body">
+                 <p id="name1"></p>
+                 <p id="name2"></p>
+                <p id="name3"></p>
+                 <p id="name4"></p>
+                 <p id="name5"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btnclr" onclick="emt()" data-bs-dismiss="modal">Close</button>
+                
+               </div>
+            </div>
+           </div>
+           </div>
+</div>
+
+
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
